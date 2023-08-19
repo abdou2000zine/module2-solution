@@ -3,31 +3,25 @@
             box-sizing: border-box;
   }
   h1 {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             text-align: center;
             font-size: 50px;
   }
-  section {
-            
-            padding: 0px;
-            width: 0px;
-    
-  }
+section {
+        position: relative;
+        width: 100%;      
+    }
   p {
-            
+            position: relative;
             clear: right;            
   }
   div{
             position: relative;
-            width: 100%;
-            margin-left: auto;
-            margin-right: 10px;
-            margin-bottom: auto;
-            margin: 30px;  
-            width: 300px;  
-
+            padding: auto;
+            margin-bottom: 15px;
   }
   .subtitle1{
+            position: relative;
             background-color: #FFB6C1;
             float: right;
             width: 100px;
@@ -39,6 +33,7 @@
             font-weight: bold;
   }
   .subtitle2{
+            position: relative;
             background-color: #FF0000;
             float: right;
             width: 100px;
@@ -50,6 +45,7 @@
             font-weight: bold;
   }
   .subtitle3{
+            position: relative;
             background-color: rgb(223, 212, 121);
             float: right;
             width: 100px;
@@ -65,42 +61,45 @@
           border: none;
           font-family: Helvetica;
           color: black;
-          margin: 3px ;
           height: 150px;
-          width: auto;
-          margin-right: 10px;
-          padding: 10px 10px 5px 10px;
+          padding: 10px 0px 5px 5px;
           overflow: hidden;
+          display: flex;
+          
   }
 #Chicken{
           border: 3.5px solid black;
           background-color: gray;
-          width: 400px;
-
-          
+           float: left;
+           padding: auto;
+            
+                    
 }
 #Beef{
           border: 3.5px solid black;
           background-color: gray;
-          width: 400px;
+          float: left;
+          padding: auto;
+
           
   }
 #Suchi{
           border: 3.5px solid black;
           background-color: gray;
-          width: 400px;
-
-        
+          padding: auto;
+          
+                 
   }
 /* Simple Responsive Framework. */
   .row {
           width: 100%;
-          float: left;
   }
 /********** Large devices only **********/
 @media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
+   
+
   }
   .col-lg-1 {
     width: 8.33%;
@@ -113,7 +112,6 @@
   }
   .col-lg-4 {
     width: 33.33%;
-  
   }
   .col-lg-5 {
     width: 41.66%;
@@ -138,11 +136,8 @@
   }
   .col-lg-12 {
     width: 100%;
-  }
-
-  
+  } 
 }
-
 /********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
